@@ -13,6 +13,8 @@ output "cluster_version" {
   value = aws_eks_cluster.main.version
 }
 
+data "aws_caller_identity" "current" {}
+
 output "github_action_user_arn" {
-  value = aws_iam_user.github_action_user.arn
+  value = data.aws_caller_identity.current.arn
 }

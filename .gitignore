@@ -1,0 +1,16 @@
+# Terraform binary & state files
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform.lock.hcl
+
+# Dependencies & Build artifacts
+node_modules/
+build/
+dist/
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
